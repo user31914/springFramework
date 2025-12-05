@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="teacher" class="com.hhit.user.Teacher">
+        <property name="name" value="张三"/>
+        <property name="addr" value="江西省南昌市"/>
+    </bean>
+
+</beans>
