@@ -12,6 +12,9 @@
         <module>day_01</module>
         <module>day_01_spring</module>
         <module>day01_homework</module>
+        <module>day_02_Injection</module>
+        <module>day_02_auto</module>
+        <module>day02_homework</module>
     </modules>
 
     <properties>
