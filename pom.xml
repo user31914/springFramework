@@ -15,6 +15,9 @@
         <module>day_02_Injection</module>
         <module>day_02_auto</module>
         <module>day02_homework</module>
+        <module>day_03_annotationDi</module>
+        <module>day_03_not_custom</module>
+        <module>day03_homework</module>
     </modules>
 
     <properties>
