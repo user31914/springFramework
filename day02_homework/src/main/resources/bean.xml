@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="manager" class="com.hhit.model.Manager">
+        <property name="students">
+            <list>
+                <ref bean="s1"/>
+                <ref bean="s2"/>
+                <ref bean="s3"/>
+                <ref bean="s4"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="s1" class="com.hhit.model.Student" p:name="张三" p:gender="男" p:libraryCard-ref="c1">
+        <property name="score">
+            <map>
+                <entry key="语文" value="80"/>
+                <entry key="英语" value="60"/>
+                <entry key="数学" value="55"/>
+                <entry key="地理" value="50"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="s2" class="com.hhit.model.Student" p:name="李四" p:gender="男" p:libraryCard-ref="c2"/>
+    <bean id="s3" class="com.hhit.model.Student" p:name="王五" p:gender="女" p:libraryCard-ref="c3"/>
+    <bean id="s4" class="com.hhit.model.Student" p:name="赵六" p:gender="男" p:libraryCard-ref="c4"/>
+
+    <bean id="c1" class="com.hhit.model.LibraryCard" p:color="红色" p:level="A"/>
+    <bean id="c2" class="com.hhit.model.LibraryCard" p:color="红色" p:level="B"/>
+    <bean id="c3" class="com.hhit.model.LibraryCard" p:color="蓝色" p:level="A"/>
+    <bean id="c4" class="com.hhit.model.LibraryCard" p:color="蓝色" p:level="B"/>
+</beans>

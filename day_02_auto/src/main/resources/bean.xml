@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="com.hhit.auto.Student" p:name="张三" autowire="byType" />
+    <bean id="teacher" class="com.hhit.auto.SubTeacher" p:name="赵老师" p:age="30"/>
+    <bean id="school" class="com.hhit.auto.SubSchool" p:name="江西财经大学"/>
+</beans>

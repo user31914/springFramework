@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="teacherService" class="com.hhit.injection.TeacherService">
+        <property name="name" value="李白"/>
+        <property name="age" value="23"/>
+        <property name="addrs">
+            <list>
+                <value>南昌</value>
+                <value>赣州</value>
+                <value>宜春</value>
+                <value>吉安</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>我是白居易</value>
+                <value>我是陈伊人</value>
+                <value>我是欢欢</value>
+            </set>
+        </property>
+        <property name="teachers">
+            <set>
+                <ref bean="a"/>
+                <ref bean="b"/>
+                <ref bean="c"/>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>奶茶</value>
+                <value>炸鸡</value>
+                <value>汉堡</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="语文" value="88.5"/>
+                <entry key="数学" value="98.5"/>
+                <entry key="英语" value="90.5"/>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="aaa">bbb</prop>
+                <prop key="hhh">ccc</prop>
+            </props>
+        </property>
+        <property name="dao" ref="impl" />
+    </bean>
+    <bean id="a" class="com.hhit.injection.Teacher">
+        <property name="name" value="张三"/>
+        <property name="age" value="23"/>
+    </bean>
+    <bean id="b" class="com.hhit.injection.Teacher">
+        <property name="name" value="李四"/>
+        <property name="age" value="24"/>
+    </bean>
+    <bean id="c" class="com.hhit.injection.Teacher">
+        <property name="name" value="王五"/>
+        <property name="age" value="25"/>
+    </bean>
+    <bean id="impl" class="com.hhit.injection.TeacherDaoImpl"/>
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="student" class="com.hhit.injection.Student" c:name="李四" c:age="24" c:teacher-ref="teacher">
+<!--        <constructor-arg name="name" value="张三"/>-->
+<!--        <constructor-arg name="age" value="23"/>-->
+    </bean>
+    <bean id="teacher" class="com.hhit.injection.Teacher" p:name="赵老师" p:age="30"/>
+</beans>
