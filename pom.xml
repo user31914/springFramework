@@ -18,6 +18,10 @@
         <module>day_03_annotationDi</module>
         <module>day_03_not_custom</module>
         <module>day03_homework</module>
+        <module>day_04_complex_object</module>
+        <module>day_04_converter</module>
+        <module>day_04_aop</module>
+        <module>day04_homework</module>
     </modules>
 
     <properties>
