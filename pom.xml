@@ -24,6 +24,9 @@
         <module>day04_homework</module>
         <module>day_05_aop_proxy</module>
         <module>day05_homework</module>
+        <module>day_06_spring_mybatis</module>
+        <module>day_07_transaction</module>
+        <module>day06_homework</module>
     </modules>
 
     <properties>
